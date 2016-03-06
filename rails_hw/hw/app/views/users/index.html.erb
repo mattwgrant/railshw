@@ -1,0 +1,11 @@
+<h1>Welcome to this page!</h1>
+
+<h3>Our Users</h3>
+<% @users.each do |user| %>
+  <ul>
+    <li>
+      <%= user.full_name %><br>
+      Page Link: /users/<%= user.id %>
+    </li>
+  </ul>
+<% end %>
